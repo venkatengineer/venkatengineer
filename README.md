@@ -11,13 +11,11 @@ A Computer Science Engineering student passionate about software development, AI
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
 
-## GitHub Stats
+## GitHub Metrics (Stable and No Vercel)
 
-![GitHub Stats](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=venkatengineer&theme=tokyonight&show_icons=true)
+![Metrics](https://metrics.lecoq.io/venkatengineer?template=classic&languages=1&isocalendar=1&lines=1&base.indepth=false&base.hireable=false&config.timezone=Asia%2FKolkata)
 
-![Top Languages](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=venkatengineer&layout=compact&theme=tokyonight)
-
-## GitHub Streak
+## GitHub Streak (Stable)
 
 ![GitHub Streak](https://streak-stats.demolab.com?user=venkatengineer&theme=tokyonight)
 
@@ -26,7 +24,7 @@ A Computer Science Engineering student passionate about software development, AI
 - Working on full-stack development and AI integration  
 - Looking to collaborate on open-source and projects  
 - Ask me about HTML, CSS, JS, MongoDB, Linux, and AI  
-- Currently building apps and learning advanced backend
+- Currently building apps and learning advanced backend  
 
 ## Connect With Me
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/venkat-badhrinarayanan-747148264/)
