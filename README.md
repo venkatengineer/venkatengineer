@@ -13,9 +13,9 @@ A Computer Science Engineering student passionate about software development, AI
 
 ## GitHub Stats
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=venkatengineer&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=true)
+![GitHub Stats](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=venkatengineer&theme=tokyonight&show_icons=true)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=venkatengineer&layout=compact&theme=tokyonight)
+![Top Languages](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=venkatengineer&layout=compact&theme=tokyonight)
 
 ## GitHub Streak
 
@@ -26,7 +26,7 @@ A Computer Science Engineering student passionate about software development, AI
 - Working on full-stack development and AI integration  
 - Looking to collaborate on open-source and projects  
 - Ask me about HTML, CSS, JS, MongoDB, Linux, and AI  
-- Currently building apps and learning advanced backend  
+- Currently building apps and learning advanced backend
 
 ## Connect With Me
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/venkat-badhrinarayanan-747148264/)
