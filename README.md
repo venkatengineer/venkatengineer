@@ -1,6 +1,8 @@
 # Hi, I'm Venkat
 A Computer Science Engineering student passionate about software development, AI, and building clean user interfaces.
 
+[![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Hello+I'm+Venkat;CSE+Student;Full+Stack+Developer;AI+Enthusiast)](https://git.io/typing-svg)
+
 ## Skills & Tools
 
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge)
@@ -11,17 +13,13 @@ A Computer Science Engineering student passionate about software development, AI
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge)
 ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge)
 
-## GitHub Activity Summary
-Since some networks block external images, here is a text-based summary that always works:
+## GitHub Activity Graph
 
-- Public Repositories: Automatically visible on your profile  
-- Contribution Calendar: Visible on your profile page  
-- Total Contributions (Year): Visible on your profile  
-- Languages Used: Viewable under each repo  
-- Commit Activity: Shown by GitHub natively  
-- Streak: Available under contributions graph  
+![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=venkatengineer&theme=tokyo-night)
 
-Everything can be checked **directly on your GitHub profile** without any external images.
+## GitHub Streak
+
+![GitHub Streak](https://streak-stats.demolab.com?user=venkatengineer&theme=tokyonight)
 
 ## About Me
 - CSE Student  
@@ -33,4 +31,3 @@ Everything can be checked **directly on your GitHub profile** without any extern
 ## Connect With Me
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge)](https://www.linkedin.com/in/venkat-badhrinarayanan-747148264/)
 [![Portfolio](https://img.shields.io/badge/Website-000?style=for-the-badge)](https://venkat-portfolio.tiiny.site)
-
