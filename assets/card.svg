@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 200" width="380" height="200">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080b10" />
+      <stop offset="100%" stop-color="#0e131f" />
+    </linearGradient>
+    
+    <!-- Neon Accent Gradients -->
+    <linearGradient id="neon-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#4facfe" />
+    </linearGradient>
+    <linearGradient id="neon-pink" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff007f" />
+      <stop offset="100%" stop-color="#7f00ff" />
+    </linearGradient>
+    <linearGradient id="neon-green" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#39f3bb" />
+      <stop offset="100%" stop-color="#27c93f" />
+    </linearGradient>
+
+    <!-- Glowing Filters -->
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="glow-pink" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Diagonal Pattern for grid vibe -->
+    <pattern id="diagonal-stripes" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="10" x2="10" y2="0" stroke="#30363d" stroke-width="0.5" opacity="0.3" />
+    </pattern>
+  </defs>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&amp;display=swap');
+    
+    .hud-text {
+      font-family: 'Fira Code', monospace;
+      font-size: 11px;
+      fill: #8b949e;
+    }
+    
+    .hud-header {
+      font-family: 'Fira Code', monospace;
+      font-size: 12px;
+      font-weight: bold;
+      fill: #00f2fe;
+      letter-spacing: 1px;
+    }
+
+    .hud-value {
+      font-family: 'Fira Code', monospace;
+      font-size: 11px;
+      fill: #f0f6fc;
+      font-weight: 500;
+    }
+
+    @keyframes pulse {
+      0% { opacity: 0.3; }
+      50% { opacity: 1; }
+      100% { opacity: 0.3; }
+    }
+
+    @keyframes scan {
+      0% { transform: translateY(0px); opacity: 0; }
+      10% { opacity: 0.5; }
+      90% { opacity: 0.5; }
+      100% { transform: translateY(190px); opacity: 0; }
+    }
+
+    .pulsing-dot {
+      animation: pulse 1.8s infinite ease-in-out;
+    }
+
+    .scanner-line {
+      animation: scan 4s infinite linear;
+    }
+  </style>
+
+  <!-- Card Frame Background -->
+  <rect x="2" y="2" width="376" height="196" rx="8" fill="url(#bg-grad)" stroke="#30363d" stroke-width="1.5" />
+  
+  <!-- Grid Vibe Background -->
+  <rect x="2" y="2" width="376" height="196" rx="8" fill="url(#diagonal-stripes)" />
+
+  <!-- Corner Tech Details -->
+  <!-- Top Left Bracket -->
+  <path d="M 12 6 H 6 V 12" stroke="#ff007f" stroke-width="1.5" fill="none" />
+  <!-- Top Right Bracket -->
+  <path d="M 368 6 H 374 V 12" stroke="#00f2fe" stroke-width="1.5" fill="none" filter="url(#glow-cyan)" />
+  <!-- Bottom Left Bracket -->
+  <path d="M 6 188 V 194 H 12" stroke="#00f2fe" stroke-width="1.5" fill="none" filter="url(#glow-cyan)" />
+  <!-- Bottom Right Bracket -->
+  <path d="M 374 188 V 194 H 368" stroke="#ff007f" stroke-width="1.5" fill="none" />
+
+  <!-- Header Section -->
+  <g transform="translate(20, 25)">
+    <text x="0" y="0" class="hud-header">SYSTEM CORE // STATUS</text>
+    
+    <!-- System Status Badge -->
+    <g transform="translate(250, -10)">
+      <!-- Green pulse dot -->
+      <circle cx="10" cy="5" r="4" fill="#39f3bb" filter="url(#glow-cyan)" class="pulsing-dot" />
+      <text x="22" y="9" class="hud-text" fill="#39f3bb" font-weight="bold">SYS_ACTIVE</text>
+    </g>
+  </g>
+  
+  <line x1="20" y1="35" x2="360" y2="35" stroke="#30363d" stroke-width="1" />
+
+  <!-- Status Info Row 1: CODING STAMINA -->
+  <g transform="translate(20, 60)">
+    <text x="0" y="0" class="hud-text">DEV_EFFICIENCY</text>
+    <!-- Background Track -->
+    <line x1="120" y1="-4" x2="300" y2="-4" stroke="#161b22" stroke-width="6" stroke-linecap="round" />
+    <!-- Foreground Progress -->
+    <line x1="120" y1="-4" x2="300" y2="-4" stroke="url(#neon-cyan)" stroke-width="6" stroke-linecap="round" stroke-dasharray="180" stroke-dashoffset="180" filter="url(#glow-cyan)">
+      <animate attributeName="stroke-dashoffset" from="180" to="27" dur="2s" begin="0.5s" fill="freeze" />
+    </line>
+    <!-- Percentage -->
+    <text x="315" y="0" class="hud-value">85%</text>
+  </g>
+
+  <!-- Status Info Row 2: COFFEE LEVELS -->
+  <g transform="translate(20, 95)">
+    <text x="0" y="0" class="hud-text">COFFEE_INTAKE</text>
+    <!-- Background Track -->
+    <line x1="120" y1="-4" x2="300" y2="-4" stroke="#161b22" stroke-width="6" stroke-linecap="round" />
+    <!-- Foreground Progress -->
+    <line x1="120" y1="-4" x2="300" y2="-4" stroke="url(#neon-pink)" stroke-width="6" stroke-linecap="round" stroke-dasharray="180" stroke-dashoffset="180" filter="url(#glow-pink)">
+      <animate attributeName="stroke-dashoffset" from="180" to="9" dur="2.2s" begin="0.7s" fill="freeze" />
+    </line>
+    <!-- Percentage -->
+    <text x="315" y="0" class="hud-value">95%</text>
+  </g>
+
+  <!-- Status Info Row 3: AUTOMATION OVERSEER -->
+  <g transform="translate(20, 130)">
+    <text x="0" y="0" class="hud-text">AUTO_DEPLOY</text>
+    <!-- Background Track -->
+    <line x1="120" y1="-4" x2="300" y2="-4" stroke="#161b22" stroke-width="6" stroke-linecap="round" />
+    <!-- Foreground Progress -->
+    <line x1="120" y1="-4" x2="300" y2="-4" stroke="url(#neon-green)" stroke-width="6" stroke-linecap="round" stroke-dasharray="180" stroke-dashoffset="180">
+      <animate attributeName="stroke-dashoffset" from="180" to="45" dur="1.8s" begin="0.9s" fill="freeze" />
+    </line>
+    <!-- Percentage -->
+    <text x="315" y="0" class="hud-value">75%</text>
+  </g>
+
+  <!-- Terminal footer line info -->
+  <line x1="20" y1="155" x2="360" y2="155" stroke="#30363d" stroke-width="1" />
+  
+  <g transform="translate(20, 175)" class="hud-text">
+    <text x="0" y="0" fill="#8b949e">PORT: <tspan fill="#ff007f">443</tspan></text>
+    <text x="90" y="0" fill="#8b949e">SSL: <tspan fill="#39f3bb">SECURE</tspan></text>
+    <text x="200" y="0" fill="#8b949e">LOC: <tspan fill="#f0f6fc">EARTH_SECTOR</tspan></text>
+  </g>
+
+  <!-- Tech HUD scanner line animation overlay -->
+  <line x1="4" y1="0" x2="376" y2="0" stroke="#00f2fe" stroke-width="1" opacity="0.3" class="scanner-line" filter="url(#glow-cyan)" />
+</svg>

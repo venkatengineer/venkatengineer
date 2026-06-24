@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 200" width="450" height="200">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="panel-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080b10" />
+      <stop offset="100%" stop-color="#0c0e15" />
+    </linearGradient>
+
+    <!-- Colors -->
+    <linearGradient id="neon-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#4facfe" />
+    </linearGradient>
+    <linearGradient id="neon-yellow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffbd2e" />
+      <stop offset="100%" stop-color="#f3a539" />
+    </linearGradient>
+    <linearGradient id="neon-pink" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff007f" />
+      <stop offset="100%" stop-color="#7f00ff" />
+    </linearGradient>
+    <linearGradient id="neon-green" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#39f3bb" />
+      <stop offset="100%" stop-color="#27c93f" />
+    </linearGradient>
+
+    <!-- Glow filters -->
+    <filter id="cyan-glow" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="pink-glow" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&amp;display=swap');
+    
+    .stats-title {
+      font-family: 'Fira Code', monospace;
+      font-size: 13px;
+      font-weight: bold;
+      fill: #00f2fe;
+      letter-spacing: 1px;
+    }
+
+    .lang-label {
+      font-family: 'Fira Code', monospace;
+      font-size: 11px;
+      fill: #8b949e;
+    }
+
+    .lang-pct {
+      font-family: 'Fira Code', monospace;
+      font-size: 11px;
+      fill: #f0f6fc;
+      font-weight: bold;
+    }
+
+    /* Keyframe Animations */
+    @keyframes load-circle {
+      from { stroke-dashoffset: 251.2; }
+    }
+    @keyframes load-circle-mid {
+      from { stroke-dashoffset: 188.4; }
+    }
+    @keyframes load-circle-inner {
+      from { stroke-dashoffset: 125.6; }
+    }
+
+    /* Loading Rules */
+    .outer-circle {
+      animation: load-circle 1.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+      animation-delay: 0.2s;
+    }
+    .middle-circle {
+      animation: load-circle-mid 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+      animation-delay: 0.4s;
+    }
+    .inner-circle {
+      animation: load-circle-inner 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+      animation-delay: 0.6s;
+    }
+  </style>
+
+  <!-- Panel Background -->
+  <rect x="2" y="2" width="446" height="196" rx="8" fill="url(#panel-bg)" stroke="#30363d" stroke-width="1.5" />
+
+  <!-- Left Side: Concentric Donut Gauge -->
+  <g transform="translate(0, 0)">
+    <!-- Outer static track -->
+    <circle cx="70" cy="105" r="40" fill="none" stroke="#161b22" stroke-width="6" />
+    <!-- Outer concentric ring (TypeScript, 45%) -->
+    <circle cx="70" cy="105" r="40" fill="none" stroke="url(#neon-cyan)" stroke-width="6" stroke-linecap="round" stroke-dasharray="251.2" stroke-dashoffset="138.16" class="outer-circle" transform="rotate(-90 70 105)" filter="url(#cyan-glow)" />
+
+    <!-- Middle static track -->
+    <circle cx="70" cy="105" r="30" fill="none" stroke="#161b22" stroke-width="6" />
+    <!-- Middle concentric ring (JavaScript, 25%) -->
+    <circle cx="70" cy="105" r="30" fill="none" stroke="url(#neon-yellow)" stroke-width="6" stroke-linecap="round" stroke-dasharray="188.4" stroke-dashoffset="141.3" class="middle-circle" transform="rotate(-90 70 105)" />
+
+    <!-- Inner static track -->
+    <circle cx="70" cy="105" r="20" fill="none" stroke="#161b22" stroke-width="6" />
+    <!-- Inner concentric ring (Python, 15%) -->
+    <circle cx="70" cy="105" r="20" fill="none" stroke="url(#neon-pink)" stroke-width="6" stroke-linecap="round" stroke-dasharray="125.6" stroke-dashoffset="106.76" class="inner-circle" transform="rotate(-90 70 105)" filter="url(#pink-glow)" />
+  </g>
+
+  <!-- Divider -->
+  <line x1="140" y1="20" x2="140" y2="180" stroke="#1f293d" stroke-width="1" stroke-dasharray="4 4" />
+
+  <!-- Title -->
+  <text x="160" y="32" class="stats-title">MAINFRAME // MOST_USED_LANGUAGES</text>
+
+  <!-- Lang 1: TypeScript (45%) -->
+  <g transform="translate(160, 58)">
+    <circle cx="5" cy="-4" r="4" fill="#00f2fe" filter="url(#cyan-glow)" />
+    <text x="20" y="0" class="lang-label">TypeScript</text>
+    <text x="250" y="0" class="lang-pct" text-anchor="end">45.0%</text>
+    <rect x="20" y="6" width="230" height="4" fill="#161b22" rx="2" />
+    <rect x="20" y="6" width="103.5" height="4" fill="url(#neon-cyan)" rx="2" />
+  </g>
+
+  <!-- Lang 2: JavaScript (25%) -->
+  <g transform="translate(160, 88)">
+    <circle cx="5" cy="-4" r="4" fill="#ffbd2e" />
+    <text x="20" y="0" class="lang-label">JavaScript</text>
+    <text x="250" y="0" class="lang-pct" text-anchor="end">25.0%</text>
+    <rect x="20" y="6" width="230" height="4" fill="#161b22" rx="2" />
+    <rect x="20" y="6" width="57.5" height="4" fill="url(#neon-yellow)" rx="2" />
+  </g>
+
+  <!-- Lang 3: Python (15%) -->
+  <g transform="translate(160, 118)">
+    <circle cx="5" cy="-4" r="4" fill="#ff007f" filter="url(#pink-glow)" />
+    <text x="20" y="0" class="lang-label">Python</text>
+    <text x="250" y="0" class="lang-pct" text-anchor="end">15.0%</text>
+    <rect x="20" y="6" width="230" height="4" fill="#161b22" rx="2" />
+    <rect x="20" y="6" width="34.5" height="4" fill="url(#neon-pink)" rx="2" />
+  </g>
+
+  <!-- Lang 4: HTML/CSS (10%) -->
+  <g transform="translate(160, 148)">
+    <circle cx="5" cy="-4" r="4" fill="#39f3bb" />
+    <text x="20" y="0" class="lang-label">HTML/CSS</text>
+    <text x="250" y="0" class="lang-pct" text-anchor="end">10.0%</text>
+    <rect x="20" y="6" width="230" height="4" fill="#161b22" rx="2" />
+    <rect x="20" y="6" width="23" height="4" fill="url(#neon-green)" rx="2" />
+  </g>
+
+  <!-- Lang 5: Shell/Others (5%) -->
+  <g transform="translate(160, 178)">
+    <circle cx="5" cy="-4" r="4" fill="#8b949e" />
+    <text x="20" y="0" class="lang-label">Shell / Others</text>
+    <text x="250" y="0" class="lang-pct" text-anchor="end">5.0%</text>
+  </g>
+
+  <!-- Corner Brackets -->
+  <path d="M 12 6 H 6 V 12" stroke="#ff007f" stroke-width="1.5" fill="none" />
+  <path d="M 438 6 H 444 V 12" stroke="#00f2fe" stroke-width="1.5" fill="none" filter="url(#cyan-glow)" />
+  <path d="M 6 188 V 194 H 12" stroke="#00f2fe" stroke-width="1.5" fill="none" filter="url(#cyan-glow)" />
+  <path d="M 444 188 V 194 H 438" stroke="#ff007f" stroke-width="1.5" fill="none" />
+</svg>
