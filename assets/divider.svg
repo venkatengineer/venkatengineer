@@ -1,12 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 12" width="800" height="12">
   <defs>
-    <!-- Linear gradient for the line -->
-    <linearGradient id="glow-line-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <!-- Linear gradient for the line with sweep animation -->
+    <linearGradient id="glow-line-grad" x1="-100%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#00f2fe" stop-opacity="0" />
-      <stop offset="25%" stop-color="#00f2fe" stop-opacity="1" />
+      <stop offset="30%" stop-color="#00f2fe" stop-opacity="1" />
       <stop offset="50%" stop-color="#7f00ff" stop-opacity="1" />
-      <stop offset="75%" stop-color="#ff007f" stop-opacity="1" />
+      <stop offset="70%" stop-color="#ff007f" stop-opacity="1" />
       <stop offset="100%" stop-color="#ff007f" stop-opacity="0" />
+      
+      <animate attributeName="x1" values="-100%;100%" dur="3.5s" repeatCount="indefinite" />
+      <animate attributeName="x2" values="0%;200%" dur="3.5s" repeatCount="indefinite" />
     </linearGradient>
 
     <!-- Glow filters -->

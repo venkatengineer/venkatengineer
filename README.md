@@ -4,11 +4,6 @@
   ========================================================================
 -->
 
-<div align="center">
-  <!-- Custom animated terminal banner -->
-  <img src="assets/banner.svg" width="100%" alt="Venkat's Terminal Banner" />
-</div>
-
 <br />
 
 <h1 align="center">Hi, I'm Venkat 👋</h1>
@@ -34,10 +29,21 @@
 </div>
 <br />
 
+<div align="center">
+  <!-- Custom animated terminal banner -->
+  <img src="assets/banner.svg" width="100%" alt="Venkat's Terminal Banner" />
+</div>
+
+<br />
+<div align="center">
+  <img src="assets/divider.svg" width="100%" alt="glowing-divider" />
+</div>
+<br />
+
 <table width="100%" border="0" cellpadding="0" cellspacing="0">
   <tr>
     <!-- Main About Section -->
-    <td width="60%" valign="top" style="border: none; padding-right: 20px;">
+    <td width="55%" valign="middle" style="border: none; padding-right: 30px;">
       <h2>🚀 SYSTEM_INIT.sh</h2>
       <p>
         I'm a developer, tech enthusiast, and problem solver passionate about building meaningful software and exploring futuristic technology.
@@ -53,9 +59,8 @@
       </p>
     </td>
     <!-- Status HUD Card Widget -->
-    <td width="40%" valign="top" align="center" style="border: none;">
-      <br />
-      <img src="assets/card.svg" width="100%" style="max-width:320px;" alt="System Status Card" />
+    <td width="45%" valign="middle" align="center" style="border: none;">
+      <img src="assets/card.svg" width="100%" style="max-width:380px;" alt="System Status Card" />
     </td>
   </tr>
 </table>
@@ -93,7 +98,6 @@
   <img src="https://img.shields.io/badge/computer%20vision-090d16?style=for-the-badge&logo=opencv&logoColor=ffffff" alt="YOLO / CV" />
   <img src="https://img.shields.io/badge/ollama-090d16?style=for-the-badge&logo=ollama&logoColor=ffffff" alt="Ollama / Local LLMs" />
 </div>
-
 
 <br />
 <div align="center">

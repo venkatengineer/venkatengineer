@@ -66,10 +66,9 @@
       font-weight: 500;
     }
 
-    @keyframes pulse {
-      0% { opacity: 0.3; }
-      50% { opacity: 1; }
-      100% { opacity: 0.3; }
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 0.4; transform: scale(0.95); }
+      50% { opacity: 1; transform: scale(1.05); }
     }
 
     @keyframes scan {
@@ -79,12 +78,32 @@
       100% { transform: translateY(190px); opacity: 0; }
     }
 
-    .pulsing-dot {
-      animation: pulse 1.8s infinite ease-in-out;
+    @keyframes pulse-bracket-cyan {
+      0%, 100% { stroke: #00f2fe; opacity: 0.8; }
+      50% { stroke: #4facfe; opacity: 0.4; }
+    }
+
+    @keyframes pulse-bracket-pink {
+      0%, 100% { stroke: #ff007f; opacity: 0.8; }
+      50% { stroke: #7f00ff; opacity: 0.4; }
+    }
+
+    .pulsing-beacon {
+      animation: pulse-dot 1.2s infinite ease-in-out;
+      transform-origin: 260px 20px;
     }
 
     .scanner-line {
       animation: scan 4s infinite linear;
+    }
+
+    .bracket-cyan {
+      animation: pulse-bracket-cyan 3s infinite ease-in-out;
+    }
+
+    .bracket-pink {
+      animation: pulse-bracket-pink 3s infinite ease-in-out;
+      animation-delay: 1.5s;
     }
   </style>
 
@@ -94,25 +113,25 @@
   <!-- Grid Vibe Background -->
   <rect x="2" y="2" width="376" height="196" rx="8" fill="url(#diagonal-stripes)" />
 
-  <!-- Corner Tech Details -->
+  <!-- Corner Tech Details (Pulsing neon) -->
   <!-- Top Left Bracket -->
-  <path d="M 12 6 H 6 V 12" stroke="#ff007f" stroke-width="1.5" fill="none" />
+  <path class="bracket-pink" d="M 12 6 H 6 V 12" stroke="#ff007f" stroke-width="1.5" fill="none" />
   <!-- Top Right Bracket -->
-  <path d="M 368 6 H 374 V 12" stroke="#00f2fe" stroke-width="1.5" fill="none" filter="url(#glow-cyan)" />
+  <path class="bracket-cyan" d="M 368 6 H 374 V 12" stroke="#00f2fe" stroke-width="1.5" fill="none" filter="url(#glow-cyan)" />
   <!-- Bottom Left Bracket -->
-  <path d="M 6 188 V 194 H 12" stroke="#00f2fe" stroke-width="1.5" fill="none" filter="url(#glow-cyan)" />
+  <path class="bracket-cyan" d="M 6 188 V 194 H 12" stroke="#00f2fe" stroke-width="1.5" fill="none" filter="url(#glow-cyan)" />
   <!-- Bottom Right Bracket -->
-  <path d="M 374 188 V 194 H 368" stroke="#ff007f" stroke-width="1.5" fill="none" />
+  <path class="bracket-pink" d="M 374 188 V 194 H 368" stroke="#ff007f" stroke-width="1.5" fill="none" />
 
   <!-- Header Section -->
   <g transform="translate(20, 25)">
     <text x="0" y="0" class="hud-header">SYSTEM CORE // STATUS</text>
     
-    <!-- System Status Badge -->
-    <g transform="translate(250, -10)">
+    <!-- System Status Badge (Pulsing beacon) -->
+    <g class="pulsing-beacon">
       <!-- Green pulse dot -->
-      <circle cx="10" cy="5" r="4" fill="#39f3bb" filter="url(#glow-cyan)" class="pulsing-dot" />
-      <text x="22" y="9" class="hud-text" fill="#39f3bb" font-weight="bold">SYS_ACTIVE</text>
+      <circle cx="240" cy="-4" r="4" fill="#39f3bb" filter="url(#glow-cyan)" />
+      <text x="250" y="0" class="hud-text" fill="#39f3bb" font-weight="bold">SYS_ACTIVE</text>
     </g>
   </g>
   
