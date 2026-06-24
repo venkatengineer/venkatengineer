@@ -40,12 +40,12 @@
       <stop offset="100%" stop-color="#ff007f" />
     </linearGradient>
 
-    <!-- Typing Animations Clip Paths (Absolute coordinates) -->
+    <!-- Typing Animations Clip Paths (Relative coordinates inside local text space) -->
     <clipPath id="clip-cmd1">
-      <rect id="rect-cmd1" x="450" y="80" width="0" height="25" />
+      <rect id="rect-cmd1" x="210" y="-20" width="0" height="30" />
     </clipPath>
     <clipPath id="clip-cmd2">
-      <rect id="rect-cmd2" x="450" y="130" width="0" height="25" />
+      <rect id="rect-cmd2" x="210" y="-20" width="0" height="30" />
     </clipPath>
   </defs>
 

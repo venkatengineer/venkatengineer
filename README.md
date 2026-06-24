@@ -28,7 +28,11 @@
   <img src="https://img.shields.io/badge/OS-Arch%20Linux-17a2b8?style=flat-square" alt="OS" />
 </div>
 
----
+<br />
+<div align="center">
+  <img src="assets/divider.svg" width="100%" alt="glowing-divider" />
+</div>
+<br />
 
 <table width="100%" border="0" cellpadding="0" cellspacing="0">
   <tr>
@@ -56,7 +60,11 @@
   </tr>
 </table>
 
----
+<br />
+<div align="center">
+  <img src="assets/divider.svg" width="100%" alt="glowing-divider" />
+</div>
+<br />
 
 ## 🛠️ TECH_STACK
 
@@ -86,42 +94,12 @@
   <img src="https://img.shields.io/badge/ollama-090d16?style=for-the-badge&logo=ollama&logoColor=ffffff" alt="Ollama / Local LLMs" />
 </div>
 
----
 
-## 🌟 PROJECT_DASHBOARD
-
-<table width="100%" border="0" cellpadding="5" cellspacing="5">
-  <tr>
-    <td width="50%" valign="top" style="border: 1px solid #30363d; border-radius: 8px; padding: 15px; background-color: #080b10;">
-      <h3>📱 SEDS App</h3>
-      <p>Space club application featuring real-time news feeds, space-tech events registration, and an interactive member portal.</p>
-      <img src="https://img.shields.io/badge/kotlin-090d16?style=flat-square&logo=kotlin&logoColor=7f52ff" alt="Kotlin" />
-      <img src="https://img.shields.io/badge/firebase-090d16?style=flat-square&logo=firebase&logoColor=ffca28" alt="Firebase" />
-    </td>
-    <td width="50%" valign="top" style="border: 1px solid #30363d; border-radius: 8px; padding: 15px; background-color: #080b10;">
-      <h3>🚗 Drive Assist</h3>
-      <p>Real-time driver fatigue monitoring system utilizing OpenCV and YOLO to track facial points and trigger alertness alarms.</p>
-      <img src="https://img.shields.io/badge/python-090d16?style=flat-square&logo=python&logoColor=3776ab" alt="Python" />
-      <img src="https://img.shields.io/badge/YOLO-090d16?style=flat-square&logo=opencv&logoColor=ffffff" alt="YOLO" />
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top" style="border: 1px solid #30363d; border-radius: 8px; padding: 15px; background-color: #080b10;">
-      <h3>♻️ ESG Sustainability</h3>
-      <p>Sustainability application designed for intelligent food expiry notification and eco-action points tracking.</p>
-      <img src="https://img.shields.io/badge/javascript-090d16?style=flat-square&logo=javascript&logoColor=f7df1e" alt="JS" />
-      <img src="https://img.shields.io/badge/mongodb-090d16?style=flat-square&logo=mongodb&logoColor=47a248" alt="MongoDB" />
-    </td>
-    <td width="50%" valign="top" style="border: 1px solid #30363d; border-radius: 8px; padding: 15px; background-color: #080b10;">
-      <h3>🤖 AI Automations</h3>
-      <p>Custom pipeline tools for dataset annotation, model training optimization, and running local LLM nodes via Ollama.</p>
-      <img src="https://img.shields.io/badge/python-090d16?style=flat-square&logo=python&logoColor=3776ab" alt="Python" />
-      <img src="https://img.shields.io/badge/ollama-090d16?style=flat-square&logo=ollama&logoColor=ffffff" alt="Ollama" />
-    </td>
-  </tr>
-</table>
-
----
+<br />
+<div align="center">
+  <img src="assets/divider.svg" width="100%" alt="glowing-divider" />
+</div>
+<br />
 
 ## 📊 GITHUB_STATS
 
@@ -141,11 +119,15 @@
   
   <br />
   
-  <!-- Dynamic GitHub Streak Graph -->
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=venkatengineer&theme=dark&background=080b10&fire=ff007f&ring=00f2fe&currStreakLabel=00f2fe&sideNums=f0f6fc&sideLabels=8b949e&dates=8b949e" width="100%" style="max-width: 900px;" alt="GitHub Streak Stats" />
+  <!-- Dynamic GitHub Streak Graph (Updated Working Demolab URL) -->
+  <img src="https://streak-stats.demolab.com/?user=venkatengineer&theme=dark&background=080b10&fire=ff007f&ring=00f2fe&currStreakLabel=00f2fe&sideNums=f0f6fc&sideLabels=8b949e&dates=8b949e" width="100%" style="max-width: 900px;" alt="GitHub Streak Stats" />
 </div>
 
----
+<br />
+<div align="center">
+  <img src="assets/divider.svg" width="100%" alt="glowing-divider" />
+</div>
+<br />
 
 ## 📬 TERMINAL_PROMPT
 
