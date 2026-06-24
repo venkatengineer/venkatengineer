@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 180" width="550" height="180">
+  <defs>
+    <!-- Glowing cyan filter -->
+    <filter id="neon-cyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+    <!-- Glowing pink filter -->
+    <filter id="neon-pink" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&amp;display=swap');
+
+    .bio-text {
+      font-family: 'Fira Code', monospace;
+      font-size: 13px;
+      fill: #e1e7f0;
+    }
+
+    .bio-highlight {
+      font-weight: bold;
+      fill: #00f2fe;
+    }
+
+    .bio-accent {
+      font-weight: bold;
+      fill: #ff007f;
+    }
+
+    /* Staggered slide and fade animations */
+    @keyframes slide-fade {
+      from {
+        opacity: 0;
+        transform: translateX(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .bio-row {
+      opacity: 0;
+      animation: slide-fade 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    .row-1 { animation-delay: 0.3s; }
+    .row-2 { animation-delay: 0.7s; }
+    .row-3 { animation-delay: 1.1s; }
+    .row-4 { animation-delay: 1.5s; }
+    .row-5 { animation-delay: 1.9s; }
+  </style>
+
+  <!-- Row 1: College Student -->
+  <g class="bio-row row-1" transform="translate(10, 20)">
+    <circle cx="5" cy="0" r="3.5" fill="#00f2fe" filter="url(#neon-cyan)" />
+    <text x="25" y="4" class="bio-text">🎓 College student focused on <tspan class="bio-highlight">Computer Science, Physics &amp; Math</tspan></text>
+  </g>
+
+  <!-- Row 2: Dev Stack -->
+  <g class="bio-row row-2" transform="translate(10, 55)">
+    <circle cx="5" cy="0" r="3.5" fill="#ff007f" filter="url(#neon-pink)" />
+    <text x="25" y="4" class="bio-text">💻 Works daily with <tspan class="bio-accent">Python, C, JavaScript, Kotlin &amp; Linux</tspan></text>
+  </g>
+
+  <!-- Row 3: Building Vision -->
+  <g class="bio-row row-3" transform="translate(10, 90)">
+    <circle cx="5" cy="0" r="3.5" fill="#00f2fe" filter="url(#neon-cyan)" />
+    <text x="25" y="4" class="bio-text">🤖 Building automation pipelines &amp; <tspan class="bio-highlight">YOLO computer vision models</tspan></text>
+  </g>
+
+  <!-- Row 4: Linux Arch -->
+  <g class="bio-row row-4" transform="translate(10, 125)">
+    <circle cx="5" cy="0" r="3.5" fill="#ff007f" filter="url(#neon-pink)" />
+    <text x="25" y="4" class="bio-text">🐧 Linux/Arch enthusiast — <tspan class="bio-accent">system customization &amp; shell tweaking</tspan></text>
+  </g>
+
+  <!-- Row 5: Curiosity systems -->
+  <g class="bio-row row-5" transform="translate(10, 160)">
+    <circle cx="5" cy="0" r="3.5" fill="#00f2fe" filter="url(#neon-cyan)" />
+    <text x="25" y="4" class="bio-text">🧠 Always curious about how things work, from <tspan class="bio-highlight">kernel to futuristic UI</tspan></text>
+  </g>
+</svg>

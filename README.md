@@ -9,7 +9,7 @@
 <h1 align="center">Hi, I'm Venkat 👋</h1>
 <p align="center">
   <b>Venkat Badhrinarayanan PV</b><br />
-  College Student | Space Tech (SEDS) Member | Linux &amp; AI Enthusiast
+  College Student | Linux Hacking &amp; Computer Vision Enthusiast
 </p>
 
 <p align="center">
@@ -42,21 +42,10 @@
 
 <table width="100%" border="0" cellpadding="0" cellspacing="0">
   <tr>
-    <!-- Main About Section -->
+    <!-- Main About Section (Animated bio text) -->
     <td width="55%" valign="middle" style="border: none; padding-right: 30px;">
       <h2>🚀 SYSTEM_INIT.sh</h2>
-      <p>
-        I'm a developer, tech enthusiast, and problem solver passionate about building meaningful software and exploring futuristic technology.
-      </p>
-      <ul>
-        <li>🎓 College student with strong academic focus on <b>Computer Science, Physics, and Mathematics</b>.</li>
-        <li>🌌 Member of <b>SEDS (Students for the Exploration and Development of Space)</b> — pursuing space tech and innovation.</li>
-        <li>🐧 Linux enthusiast — enjoy customization, system optimization, and open-source tooling on <b>Arch Linux</b>.</li>
-        <li>🧠 Deeply curious about how things work, from low-level systems up to high-fidelity user interfaces.</li>
-      </ul>
-      <p>
-        <b>Tech Interests:</b> AI, Machine Learning, Computer Vision, and Quantum Computing.
-      </p>
+      <img src="assets/bio.svg" width="100%" alt="System Init Bio" />
     </td>
     <!-- Status HUD Card Widget -->
     <td width="45%" valign="middle" align="center" style="border: none;">
@@ -123,8 +112,8 @@
   
   <br />
   
-  <!-- Dynamic GitHub Streak Graph (Updated Working Demolab URL) -->
-  <img src="https://streak-stats.demolab.com/?user=venkatengineer&theme=dark&background=080b10&fire=ff007f&ring=00f2fe&currStreakLabel=00f2fe&sideNums=f0f6fc&sideLabels=8b949e&dates=8b949e" width="100%" style="max-width: 900px;" alt="GitHub Streak Stats" />
+  <!-- Dynamic GitHub Streak Graph (Updated Working Demolab URL - Without trailing slash) -->
+  <img src="https://streak-stats.demolab.com?user=venkatengineer&theme=dark&background=080b10&fire=ff007f&ring=00f2fe&currStreakLabel=00f2fe&sideNums=f0f6fc&sideLabels=8b949e&dates=8b949e" width="100%" style="max-width: 900px;" alt="GitHub Streak Stats" />
 </div>
 
 <br />
