@@ -25,18 +25,18 @@
 
 <br />
 <div align="center">
-  <img src="assets/divider.svg?v=3.1" width="100%" alt="glowing-divider" />
+  <img src="assets/divider.svg?v=4.0" width="100%" alt="glowing-divider" />
 </div>
 <br />
 
 <div align="center">
   <!-- Custom animated terminal banner -->
-  <img src="assets/banner.svg?v=3.1" width="100%" alt="Venkat's Terminal Banner" />
+  <img src="assets/banner.svg?v=4.0" width="100%" alt="Venkat's Terminal Banner" />
 </div>
 
 <br />
 <div align="center">
-  <img src="assets/divider.svg?v=3.1" width="100%" alt="glowing-divider" />
+  <img src="assets/divider.svg?v=4.0" width="100%" alt="glowing-divider" />
 </div>
 <br />
 
@@ -45,18 +45,18 @@
     <!-- Main About Section (Animated bio text) -->
     <td width="55%" valign="middle" style="border: none; padding-right: 30px;">
       <h2>🚀 SYSTEM_INIT.sh</h2>
-      <img src="assets/bio.svg?v=3.1" width="100%" alt="System Init Bio" />
+      <img src="assets/bio.svg?v=4.0" width="100%" alt="System Init Bio" />
     </td>
     <!-- Status HUD Card Widget -->
     <td width="45%" valign="middle" align="center" style="border: none;">
-      <img src="assets/card.svg?v=3.1" width="100%" style="max-width:380px;" alt="System Status Card" />
+      <img src="assets/card.svg?v=4.0" width="100%" style="max-width:380px;" alt="System Status Card" />
     </td>
   </tr>
 </table>
 
 <br />
 <div align="center">
-  <img src="assets/divider.svg?v=3.1" width="100%" alt="glowing-divider" />
+  <img src="assets/divider.svg?v=4.0" width="100%" alt="glowing-divider" />
 </div>
 <br />
 
@@ -90,7 +90,7 @@
 
 <br />
 <div align="center">
-  <img src="assets/divider.svg?v=3.1" width="100%" alt="glowing-divider" />
+  <img src="assets/divider.svg?v=4.0" width="100%" alt="glowing-divider" />
 </div>
 <br />
 
@@ -99,13 +99,13 @@
 <div align="center">
   <table border="0" cellpadding="0" cellspacing="0" width="100%">
     <tr>
-      <!-- Dynamic Live-updating GitHub stats -->
+      <!-- Local GitHub stats -->
       <td width="50%" align="center" style="border: none;">
-        <img src="https://github-readme-stats.vercel.app/api?username=venkatengineer&show_icons=true&title_color=00f2fe&text_color=f0f6fc&icon_color=ff007f&bg_color=080b10&border_color=30363d&hide_border=false" width="100%" style="max-width: 450px;" alt="GitHub Stats" />
+        <img src="assets/stats.svg?v=4.0" width="100%" style="max-width: 450px;" alt="GitHub Stats" />
       </td>
-      <!-- Dynamic Live-updating languages card -->
+      <!-- Local languages card -->
       <td width="50%" align="center" style="border: none;">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=venkatengineer&layout=compact&title_color=00f2fe&text_color=f0f6fc&icon_color=ff007f&bg_color=080b10&border_color=30363d&hide_border=false" width="100%" style="max-width: 450px;" alt="Top Languages" />
+        <img src="assets/languages.svg?v=4.0" width="100%" style="max-width: 450px;" alt="Top Languages" />
       </td>
     </tr>
   </table>
@@ -118,7 +118,7 @@
 
 <br />
 <div align="center">
-  <img src="assets/divider.svg?v=3.1" width="100%" alt="glowing-divider" />
+  <img src="assets/divider.svg?v=4.0" width="100%" alt="glowing-divider" />
 </div>
 <br />
 
