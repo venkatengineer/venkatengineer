@@ -25,18 +25,18 @@
 
 <br />
 <div align="center">
-  <img src="assets/divider.svg" width="100%" alt="glowing-divider" />
+  <img src="assets/divider.svg?v=2.0" width="100%" alt="glowing-divider" />
 </div>
 <br />
 
 <div align="center">
   <!-- Custom animated terminal banner -->
-  <img src="assets/banner.svg" width="100%" alt="Venkat's Terminal Banner" />
+  <img src="assets/banner.svg?v=2.0" width="100%" alt="Venkat's Terminal Banner" />
 </div>
 
 <br />
 <div align="center">
-  <img src="assets/divider.svg" width="100%" alt="glowing-divider" />
+  <img src="assets/divider.svg?v=2.0" width="100%" alt="glowing-divider" />
 </div>
 <br />
 
@@ -45,18 +45,18 @@
     <!-- Main About Section (Animated bio text) -->
     <td width="55%" valign="middle" style="border: none; padding-right: 30px;">
       <h2>🚀 SYSTEM_INIT.sh</h2>
-      <img src="assets/bio.svg" width="100%" alt="System Init Bio" />
+      <img src="assets/bio.svg?v=2.0" width="100%" alt="System Init Bio" />
     </td>
     <!-- Status HUD Card Widget -->
     <td width="45%" valign="middle" align="center" style="border: none;">
-      <img src="assets/card.svg" width="100%" style="max-width:380px;" alt="System Status Card" />
+      <img src="assets/card.svg?v=2.0" width="100%" style="max-width:380px;" alt="System Status Card" />
     </td>
   </tr>
 </table>
 
 <br />
 <div align="center">
-  <img src="assets/divider.svg" width="100%" alt="glowing-divider" />
+  <img src="assets/divider.svg?v=2.0" width="100%" alt="glowing-divider" />
 </div>
 <br />
 
@@ -90,7 +90,7 @@
 
 <br />
 <div align="center">
-  <img src="assets/divider.svg" width="100%" alt="glowing-divider" />
+  <img src="assets/divider.svg?v=2.0" width="100%" alt="glowing-divider" />
 </div>
 <br />
 
@@ -118,7 +118,7 @@
 
 <br />
 <div align="center">
-  <img src="assets/divider.svg" width="100%" alt="glowing-divider" />
+  <img src="assets/divider.svg?v=2.0" width="100%" alt="glowing-divider" />
 </div>
 <br />
 
