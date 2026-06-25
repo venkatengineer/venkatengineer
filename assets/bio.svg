@@ -38,6 +38,37 @@
       fill: #ff007f;
     }
 
+    .bullet-cyan {
+      fill: #00f2fe;
+      filter: url(#neon-cyan);
+    }
+
+    .bullet-pink {
+      fill: #ff007f;
+      filter: url(#neon-pink);
+    }
+
+    /* Light Theme Overrides */
+    @media (prefers-color-scheme: light) {
+      .bio-text {
+        fill: #1f2328;
+      }
+      .bio-highlight {
+        fill: #0066cc;
+      }
+      .bio-accent {
+        fill: #d63384;
+      }
+      .bullet-cyan {
+        fill: #0066cc;
+        filter: none;
+      }
+      .bullet-pink {
+        fill: #d63384;
+        filter: none;
+      }
+    }
+
     /* Staggered slide and fade animations */
     @keyframes slide-fade {
       from {
@@ -64,31 +95,31 @@
 
   <!-- Row 1: College Student -->
   <g class="bio-row row-1" transform="translate(10, 20)">
-    <circle cx="5" cy="0" r="3.5" fill="#00f2fe" filter="url(#neon-cyan)" />
+    <circle cx="5" cy="0" r="3.5" class="bullet-cyan" />
     <text x="25" y="4" class="bio-text">🎓 College student focused on <tspan class="bio-highlight">Computer Science, Physics &amp; Math</tspan></text>
   </g>
 
   <!-- Row 2: Dev Stack -->
   <g class="bio-row row-2" transform="translate(10, 55)">
-    <circle cx="5" cy="0" r="3.5" fill="#ff007f" filter="url(#neon-pink)" />
+    <circle cx="5" cy="0" r="3.5" class="bullet-pink" />
     <text x="25" y="4" class="bio-text">💻 Works daily with <tspan class="bio-accent">Python, C, JavaScript, Kotlin &amp; Linux</tspan></text>
   </g>
 
   <!-- Row 3: Building Vision -->
   <g class="bio-row row-3" transform="translate(10, 90)">
-    <circle cx="5" cy="0" r="3.5" fill="#00f2fe" filter="url(#neon-cyan)" />
+    <circle cx="5" cy="0" r="3.5" class="bullet-cyan" />
     <text x="25" y="4" class="bio-text">🤖 Building automation pipelines &amp; <tspan class="bio-highlight">YOLO computer vision models</tspan></text>
   </g>
 
   <!-- Row 4: Linux Arch -->
   <g class="bio-row row-4" transform="translate(10, 125)">
-    <circle cx="5" cy="0" r="3.5" fill="#ff007f" filter="url(#neon-pink)" />
+    <circle cx="5" cy="0" r="3.5" class="bullet-pink" />
     <text x="25" y="4" class="bio-text">🐧 Linux/Arch enthusiast — <tspan class="bio-accent">system customization &amp; shell tweaking</tspan></text>
   </g>
 
   <!-- Row 5: Curiosity systems -->
   <g class="bio-row row-5" transform="translate(10, 160)">
-    <circle cx="5" cy="0" r="3.5" fill="#00f2fe" filter="url(#neon-cyan)" />
+    <circle cx="5" cy="0" r="3.5" class="bullet-cyan" />
     <text x="25" y="4" class="bio-text">🧠 Always curious about how things work, from <tspan class="bio-highlight">kernel to futuristic UI</tspan></text>
   </g>
 </svg>
